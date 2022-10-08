@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+</head>
+<body>
+    <script>
+        let cont = 0
+        let lista = []
+        let resto = 0
+
+        while(cont < 10){
+            let valor = Number(prompt('Digite um número: '))
+            if(valor >= 10 && valor <= 20){
+                lista.push(valor)
+            }
+            resto = 10 - lista.length
+            cont++
+        }
+        alert(`Os números entre 10 e 20 são:  ${lista.length}
+        \nOs que não estão dentro do intervalo são: ${resto}`)
+    </script>
+</body>
+</html>
